@@ -1,6 +1,7 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions
 
+
 ## Functions
 
 **1. ColNoToLetter**
@@ -30,7 +31,7 @@ VBA code Snippets, patterns, useful functions
 **9. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환함
 
----
+
 ## Sub processors
 
 1. SaveSheetAsPDF
