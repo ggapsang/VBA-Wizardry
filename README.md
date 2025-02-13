@@ -3,28 +3,31 @@ VBA code Snippets, patterns, useful functions
 
 ## Functions
 
-**1. ConvertTo2DArray**
+**1. ColNoToLetter**
+  - 열번호를 엑셀 형식에 맞는 알파벳 칼럼 번호로 바꿔줌 
+
+**2. ConvertTo2DArray**
   - 1차원 배열을 2차원으로 변경. 2차원인 상태에서 세로로 된 Range에 바로 입력될 수 있음
 
-**2. CreateDictionaryFromRange**
+**3. CreateDictionaryFromRange**
   - (N x M) Range에서 첫 번째 열을 key로, 나머지 (M-1)개 열의 값을 배열로 저장하는 딕셔너리 생성
 
-**3. FindColLetter**
+**4. FindColLetter**
    - 특정 행(해더)에서 특정 문자열(칼럼 이름)을 찾고, 해당 칼럼이 있는 열 위치를 알파벳으로 반환하기
 
-**4. FlattenArray**
+**5. FlattenArray**
    - 2차원 배열을 1차원으로 변환
 
-**5. GetFilePath**
+**6. GetFilePath**
    - 윈폼(winform) 창을 띄우고, 폴더를 선택하게 한 뒤 해당 파일 경로를 return함
 
-**6. GetFolderPath**
+**7. GetFolderPath**
    - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 return함
 
-**7. GetUniqueValues**
+**8. GetUniqueValues**
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 return
 
-**8. IsInArray**
+**9. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환함
 
 ## Sub processor
