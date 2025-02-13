@@ -30,7 +30,8 @@ VBA code Snippets, patterns, useful functions
 **9. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환함
 
-## Sub processor
+---
+## Sub processors
 
 1. SaveSheetAsPDF
    - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
