@@ -34,9 +34,9 @@ VBA code Snippets, patterns, useful functions
 
 ## Sub processors
 
-1. SaveSheetAsPDF
+**1. SaveSheetAsPDF**
    - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
   
-2. VBAOptimizer
+**2. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
