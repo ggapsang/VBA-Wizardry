@@ -42,6 +42,7 @@ VBA code Snippets, patterns, useful functions
 
 **2. SelectNextUniqueValue**
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
+  - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
 **3. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
