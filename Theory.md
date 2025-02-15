@@ -1,5 +1,6 @@
 ## Application Object
 
+
 ```
 Sub Application_Object
     Dim strInfo As String
@@ -15,7 +16,8 @@ End Sub
 - `.Verstion` = 현재 설치된 엑셀 버전
 - `.Path` = 엑셀이 설치되어 있는 폴더 경로
 - `.StartupPath` = 시작 폴더의 위치
-- `.FullName` = 통합 문서의 경로, 파일명, 확장자를 모두 표시함 (경로만 표시할 때는 Path 사용) <br>
+- `.FullName` = 통합 문서의 경로, 파일명, 확장자를 모두 표시함 (경로만 표시할 때는 Path 사용)
+  
 
 ```
 Sub StatusBar
@@ -35,14 +37,17 @@ End Sub
 
 ## Workbook Object
 
+
 ### Object Model 계층 구조
 - 엑셀(`Application`)
 - 워크북스(`Workbooks`) : Collection Object
 - **워크북(`Workbook`)**
 - 워크시트(`Worksheet`)
 - 레인지(`Range`)
+
   
 ### Workbooks 개체의 주요 매서드
+
 
 - `Workbooks.Add` : 새 워크북(새 엑셀 파일-통합 문서) 생성
 - `Workbooks.Open Filename:= "file_name.xlsx"` : 워크북 열기
