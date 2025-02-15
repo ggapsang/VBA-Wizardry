@@ -45,7 +45,6 @@ End Sub
 - 엑셀(`Application`)
 - 워크북스(`Workbooks`) : Collection Object 
 <br>
-
 - **워크북(`Workbook`)** <br>
 - 워크시트(`Worksheet`)<br>
 - 레인지(`Range`)
