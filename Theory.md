@@ -41,11 +41,11 @@ End Sub
 
 ### Object Model 계층 구조
 <br>
-- 엑셀(`Application`)
-- 워크북스(`Workbooks`) : Collection Object
-- **워크북(`Workbook`)**
-- 워크시트(`Worksheet`)
-- 레인지(`Range`)
+- 엑셀(`Application`)<br>
+- 워크북스(`Workbooks`) : Collection Object<br>
+- **워크북(`Workbook`)**<br>
+- 워크시트(`Worksheet`)<br>
+- 레인지(`Range`)<br>
 
 <br>
 
