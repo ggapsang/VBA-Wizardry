@@ -35,6 +35,7 @@ End Sub
 - `.StatusBar` = 상태 표시줄 진행창 변경
 - `.DisplayScrollBars` = 스크롤 바를 숨기거나 보이게 함
 <br>
+
 ## Workbook Object
 <br>
 
