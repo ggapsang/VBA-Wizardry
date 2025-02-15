@@ -25,10 +25,13 @@ VBA code Snippets, patterns, useful functions
 **7. GetFolderPath**
    - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 return함
 
-**8. GetUniqueValues**
+**8. GetSheetsNames**
+  - 워크북의 모든 워크시트들의 이름을 배열로 저장
+
+**9. GetUniqueValues**
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 return
 
-**9. IsInArray**
+**10. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환함
 
 
