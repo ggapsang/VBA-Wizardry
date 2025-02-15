@@ -41,7 +41,8 @@ End Sub
 
 ### Object Model 계층 구조
 <br>
-- 엑셀(`Application`)<br>
+- 엑셀(`Application`)
+<br>
 - 워크북스(`Workbooks`) : Collection Object 
 <br>
 
