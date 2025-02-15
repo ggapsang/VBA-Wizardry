@@ -40,7 +40,7 @@ End Sub
 <br>
 
 ### Object Model 계층 구조
-<br>
+---
 
 - 엑셀(`Application`) <br>
 - 워크북스(`Workbooks`) : Collection Object <br> 
@@ -51,7 +51,7 @@ End Sub
 <br>
 
 ### Workbooks 개체의 주요 매서드
-<br>
+---
 
 - `Workbooks.Add` : 새 워크북(새 엑셀 파일-통합 문서) 생성
 - `Workbooks.Open Filename:= "file_name.xlsx"` : 워크북 열기
