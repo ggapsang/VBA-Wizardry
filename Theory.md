@@ -43,7 +43,6 @@ End Sub
 <br>
 
 - 엑셀(`Application`)
-<br>
 - 워크북스(`Workbooks`) : Collection Object 
 <br>
 
