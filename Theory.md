@@ -36,7 +36,7 @@ End Sub
 - `.DisplayScrollBars` = 스크롤 바를 숨기거나 보이게 함
 <br>
 
-## Workbook Object
+## Workbooks Object
 <br>
 
 ### Object Model 계층 구조
@@ -58,4 +58,21 @@ End Sub
         - ex : `ActiveWorkbook.Close savechanges:=True` 또는 `ActiveWorkbook.Close True`
 - `Workbooks("file_name.xlsx").Save` : 워크북 저장
 - `ActiveWorkbook.Save` 가능함
-  
+
+## Worksheets Object
+<br>
+
+### Wokrsheet 개체의 주요 매서드
+- `Worksheets.Add` : 새 워크시트 삽입(현재 시트의 앞쪽(왼쪽)에 새로운 워크시트가 삽입됨)
+    - 정해진 위치에 워크시트를 삽입하기 위해서는
+      - Worksheets.Add after:=Worksheets(1), Count:=2 (삽입 위치: 첫 번째 워크시트 뒤, 삽입할 워크시트의 개수 : count)
+- `Worksheet.Activate` : 워크시트 활성화
+- `Worksheets.Select` : 워크북 내의 모든 시트 선택
+- `Worksheets(Array(1, 3, 5)).Select : 서로 인접해 있지 않은 시트를 선택할 때는 배열을 사용함
+- `Wokrsheets(2).Name = '시트이름'` : 시트 이름 변경
+- `Worksheets("Sheet1").Move after:=Worksheets("Sheet3") : 시트 이동
+- `Worksheets("Sheet1").Copy after:=Worksheets(2) : 시트를 복사(2번째 시트 뒤에 놓음)
+
+
+
+
