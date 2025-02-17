@@ -37,7 +37,6 @@ End Sub
 <br>
 
 ## Workbooks Object
-<br>
 
 ### Object Model 계층 구조
 - 엑셀(`Application`) <br>
@@ -63,7 +62,6 @@ End Sub
 <br>
 
 ## Worksheets Object
-<br>
 
 ### Wokrsheet 개체의 주요 매서드
 - `Worksheets.Add` : 새 워크시트 삽입(현재 시트의 앞쪽(왼쪽)에 새로운 워크시트가 삽입됨)
