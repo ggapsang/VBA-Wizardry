@@ -1,5 +1,5 @@
 Function CreateDictionaryFromRange(rng As Range) As Object
-''' input : 범위(N x M)에서 첫 번째 열을 key로, 나머지 (M-1)개 열의 값을 배열로 저장하는 딕셔너리 생성 (0부터 시작)
+    ''' input : 범위(N x M)에서 첫 번째 열을 key로, 나머지 (M-1)개 열의 값을 배열로 저장하는 딕셔너리 생성 (0부터 시작)
 
     Dim dict As Object
     Set dict = CreateObject("Scripting.Dictionary")
@@ -21,10 +21,15 @@ Function CreateDictionaryFromRange(rng As Range) As Object
         key = data(i, 1) ' 첫 번째 열(Key)
 
         ' 나머지 열들을 배열로 저장 (0부터 시작)
-        ReDim values(0 To colCount - 2)
-        For j = 2 To colCount
-            values(j - 2) = data(i, j) ' 2열부터 마지막 열까지 저장
-        Next j
+        If colCount > 1 Then
+            ReDim values(0 To colCount - 2) ' 0부터 시작하도록 설정
+            For j = 2 To colCount
+                values(j - 2) = data(i, j) ' 2열부터 마지막 열까지 저장
+            Next j
+        Else
+            ' 만약 데이터가 단일 열이라면 빈 배열 추가
+            ReDim values(-1 To -1) ' 빈 배열
+        End If
 
         ' Key가 없으면 추가
         If Not dict.Exists(key) Then
