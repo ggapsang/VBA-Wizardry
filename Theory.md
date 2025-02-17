@@ -44,7 +44,7 @@ End Sub
 - **워크북(`Workbook`)** <br>
 - 워크시트(`Worksheet`)<br>
 - 레인지(`Range`)
-<br>
+<br></br>
 ### Workbooks 개체의 주요 매서드
 - `Workbooks.Add` : 새 워크북(새 엑셀 파일-통합 문서) 생성
 - `Workbooks.Open Filename:= "file_name.xlsx"` : 워크북 열기
