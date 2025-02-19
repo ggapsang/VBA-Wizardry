@@ -67,11 +67,12 @@ End Sub
       - Worksheets.Add after:=Worksheets(1), Count:=2 (삽입 위치: 첫 번째 워크시트 뒤, 삽입할 워크시트의 개수 : count)
 - `Worksheet.Activate` : 워크시트 활성화
 - `Worksheets.Select` : 워크북 내의 모든 시트 선택
-- `Worksheets(Array(1, 3, 5)).Select : 서로 인접해 있지 않은 시트를 선택할 때는 배열을 사용함
+- `Worksheets(Array(1, 3, 5)).Select` : 서로 인접해 있지 않은 시트를 선택할 때는 배열을 사용함
 - `Wokrsheets(2).Name = '시트이름'` : 시트 이름 변경
-- `Worksheets("Sheet1").Move after:=Worksheets("Sheet3") : 시트 이동
-- `Worksheets("Sheet1").Copy after:=Worksheets(2) : 시트를 복사(2번째 시트 뒤에 놓음)
-
+- `Worksheets("Sheet1").Move after:=Worksheets("Sheet3")` : 시트 이동
+- `Worksheets("Sheet1").Copy after:=Worksheets(2)` : 시트를 복사(2번째 시트 뒤에 놓음)
+- `Worksheets.Delete` : 워크시트 삭제
+  - `Application.DisplayAlerts = False` 로 설정하면 삭제 메세지가 나오지 않음
 
 
 
