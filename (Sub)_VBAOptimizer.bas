@@ -1,4 +1,5 @@
 ''' 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
+
 ' 최적화 시작 (화면 업데이트 중지, 자동 계산 비활성화, 경고 메시지 비활성화)
 Private Sub OptimizeStart()
     Application.ScreenUpdating = False
