@@ -1,6 +1,7 @@
+''' 1차원 배열을 2차원으로 변경. 2차원인 상태에서 세로로 된 Range에 바로 입력될 수 있음
+    ' input : 1차원 array
+    ' return : 2차원 array. 세로로 된 range에 바로 들어갈 수 있음
 Function ConvertTo2DArray(arr As Variant) As Variant
-''' input : 1차원 array
-''' return : 2차원 array. 세로로 된 range에 바로 들어갈 수 있음
 
     Dim i As Long
     Dim tempArray() As Variant
