@@ -73,6 +73,42 @@ End Sub
 - `Worksheets("Sheet1").Copy after:=Worksheets(2)` : 시트를 복사(2번째 시트 뒤에 놓음)
 - `Worksheets.Delete` : 워크시트 삭제
   - `Application.DisplayAlerts = False` 로 설정하면 삭제 메세지가 나오지 않음
+<br>
+<br>
+<br>
 
+## Text file 입출력
+
+### 텍스트 파일을 한 줄씩 읽어 출력
+```
+Sub ReadTextFile()
+    Dim filePath As String
+    Dim fileNum As Integer
+    Dim lineContent As String
+    
+    filePath = "C:\path\to\your\file.txt" ' 파일 경로 설정
+    fileNum = FreeFile ' 사용 가능한 파일 번호 가져오기
+
+    Open filePath For Input As #fileNum
+    Do While Not EOF(fileNum) ' 파일 끝(EOF)에 도달할 때까지 반복
+        Line Input #fileNum, lineContent ' 한 줄씩 읽기
+        Debug.Print lineContent ' 읽은 내용을 즉시 출력 (Immediate 창)
+    Loop
+    Close #fileNum ' 파일 닫기
+End Sub
+```
+
+- `Open filePath For Input As #fileNum` → 파일을 읽기 모드(`Input`)으로 열기
+- `Do While Not EOF(fileNum)` → 파일이 끝(EOF)이 아닐 때까지 반복
+- `Line Input #fileNum, lineContent` → 한 줄씩 읽이서 변수에 저장
+- `Close #fileNum `→ 파일 닫기
+<br></br>
+### `fileNum`
+VBA에서 파일을 열 때, **엑셀은 파일을 식별하기 위해 "파일 핸들 번호"를 부여한다**
+fileNum는 파일을 여는 `Open` 문에서 지정해야 하며, 이후 파일을 읽거나 쓸 때 이 번호를 사용해야 한다
+#### 파일 핸들 번호가 필요한 이유
+- VBA에서는 여러 개의 파일을 동시에 열 수 있음
+- 파일을 닫을 때 정확한 파일을 지정해야 한다
+- 많이 읽고 쓰는 명령어에서 파일을 구별한다
 
 
