@@ -1,5 +1,6 @@
-Function GetSheetNames() As Variant
 ''' 모든 시트 이름을 배열로 반환
+Function GetSheetNames() As Variant
+
     Dim ws As Worksheet
     Dim sheetNames() As String
     Dim i As Long
