@@ -1,7 +1,7 @@
 ''' Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
+    'input : Range
+    'return : input Range의 unique 값들만을 모아 둔 배열
 Function GetUniqueValues(rng As Range) As Variant
-''' input : Range
-''' return : input Range의 unique 값들만을 모아 둔 배열
 
     Dim cell As Range
     Dim uniqueDict As Object
