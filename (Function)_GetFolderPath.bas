@@ -1,4 +1,4 @@
-' winform을 이용하여 사용자가 특정 폴더 선택
+''' winform을 이용하여 사용자가 특정 폴더 선택
 Function GetFolderPath() As String
     Dim folderPath As String
     With Application.FileDialog(msoFileDialogFolderPicker)
