@@ -1,10 +1,11 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-11 functions, 5 sub processor, 2 module (2025.2.21)
+11 functions, 5 sub processor, 2 module, 1 snippet (2025.2.21)
 
 - Spellbook : modules
 - Runes : sub processors
 - Incantations : functions
+- Cantrips : sinppets
 
 ## Moduels
 **1. BatchSaveWsAsCSV**
@@ -68,4 +69,9 @@ VBA code Snippets, patterns, useful functions <br>
 **11. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
 
+## Snippets
+
+**1. ReadFilesByLines**
+    - VBA로 텍스트 파일을 읽는 법
+    - 파이썬처럼 line by line으로 읽어들이기
 
