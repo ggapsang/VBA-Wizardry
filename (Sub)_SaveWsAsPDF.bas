@@ -1,4 +1,4 @@
-Private Sub SaveSheetAsPDF(ws As Worksheet, folderPath As String)
+Private Sub SaveWsAsPDF(ws As Worksheet, folderPath As String)
 
     Dim fileName As String
     ' 파일명 설정
