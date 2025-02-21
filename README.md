@@ -40,7 +40,7 @@ VBA code Snippets, patterns, useful functions
 **1. ExportWsToNewWb**
   - 워크시트를 복사해서 새 워크북에 넣음
 
-**2. SaveSheetAsPDF**
+**2. SaveWsAsPDF**
   - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 
 **3. SelectNextUniqueValue**
