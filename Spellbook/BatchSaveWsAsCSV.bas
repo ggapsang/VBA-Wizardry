@@ -28,6 +28,8 @@ Sub Main
   Next i
 
   OptimizeEnd
+
+  MsgBox "Complete"
 End Sub
 
 
