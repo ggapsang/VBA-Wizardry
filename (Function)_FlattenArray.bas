@@ -1,3 +1,4 @@
+''' 2차원 배열을 1차원으로 변환
 Function FlattenArray(twoDArray As Variant) As Variant
     Dim r As Long, c As Long, index As Long
     Dim rowCount As Long, colCount As Long
