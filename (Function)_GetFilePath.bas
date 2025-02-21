@@ -1,3 +1,4 @@
+' winform을 이용하여 사용자가 특정 파일 선택
 Function GetFilePath(Optional AllowMultiSelect As Boolean = False) As String
     Dim filePath As String
     With Application.FileDialog(msoFileDialogFilePicker)
