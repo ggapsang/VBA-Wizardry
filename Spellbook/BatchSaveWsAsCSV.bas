@@ -17,6 +17,8 @@ Sub Main
     Dim filePath As String
     Dim ws As Worksheet
 
+    filePath = loadFolderPath & "\" & fileList(i)
+
     Set loadWb = Workbooks.Open(filePath)
     Set ws = loadWb.Sheets(1) ' 시트 번호를 수정하여 일괄 저장할 시트를 선택하거나 동적으로 입력받도록 매크로를 수정할 수 있음
 
