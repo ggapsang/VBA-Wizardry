@@ -52,7 +52,7 @@ VBA code Snippets, patterns, useful functions <br>
    - 2차원 배열을 1차원으로 변환
 
 **6. GetExcelFilesList**
-    - 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환
+  - 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환
 
 **7. GetFilePath**
    - 윈폼(winform) 창을 띄우고, 폴더를 선택하게 한 뒤 해당 파일 경로를 반환
