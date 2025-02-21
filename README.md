@@ -2,11 +2,37 @@
 VBA code Snippets, patterns, useful functions <br>
 11 functions, 5 sub processor, 2 module (2025.2.21)
 
-- SpellBook : modules
+- Spellbook : modules
 - Runes : sub processors
 - Incantations : functions
 
+## Moduels
+**1. BatchSaveWsAsCSV**
+  - 특정 폴더 안에 있는 모든 엑셀파일들의 특정 번호의 시트를 csv파일로 저장함
+  - 시트 번호를 시트 이름 등으로 수정하여 동적으로 변경되도록 개조 가능
 
+**2. SelectNextUniqueValue**
+  - 현재 선택된 셀에서 열 기준으로 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
+  - 정렬 후 단축키를 넣어 사용할때, 유용한 매크로
+
+## Sub processors
+
+**1. ExportWsToNewWb**
+  - 워크시트를 복사해서 새 워크북에 넣음
+
+**2. SaveWsAsPDF**
+  - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
+
+**3. SaveWsAsCSV**
+  - 워크시트를 csv 파일로 저장함
+
+**4. SelectNextUniqueValue**
+  - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
+  - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
+
+**5. VBAOptimizer**
+   - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
+  
 ## Functions
 
 **1. ColNoToLetter**
@@ -43,21 +69,3 @@ VBA code Snippets, patterns, useful functions <br>
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
 
 
-## Sub processors
-
-**1. ExportWsToNewWb**
-  - 워크시트를 복사해서 새 워크북에 넣음
-
-**2. SaveWsAsPDF**
-  - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
-
-**3. SaveWsAsCSV**
-  - 워크시트를 csv 파일로 저장함
-
-**4. SelectNextUniqueValue**
-  - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
-  - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
-
-**5. VBAOptimizer**
-   - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
-  
