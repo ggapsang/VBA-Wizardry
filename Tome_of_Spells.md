@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-11 functions, 5 sub processor, 2 module, 1 snippet (2025.2.21)
+12 functions, 5 sub processor, 2 module, 1 snippet (2025.2.22)
 
 - Spellbook : modules
 - Runes : sub processors
@@ -60,13 +60,16 @@ VBA code Snippets, patterns, useful functions <br>
 **8. GetFolderPath**
    - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 반환
 
-**9. GetSheetsNames**
+**9. GetImageList**
+    - 워크시트를 받아서 해당 워크시트 안에 있는 이미지 파일들의 배열을 반환
+
+**10. GetSheetsNames**
   - 워크북의 모든 워크시트들의 이름을 배열로 저장
 
-**10. GetUniqueValues**
+**11. GetUniqueValues**
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
 
-**11. IsInArray**
+**12. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
 
 ## Snippets
