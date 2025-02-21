@@ -1,3 +1,4 @@
+''' 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 Private Sub SaveWsAsPDF(ws As Worksheet, folderPath As String)
 
     Dim fileName As String
