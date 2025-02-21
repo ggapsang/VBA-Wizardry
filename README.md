@@ -1,5 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions
+11 Functions, 5 Subprocessor (2025.2.21)
 
 
 ## Functions
@@ -19,20 +20,23 @@ VBA code Snippets, patterns, useful functions
 **5. FlattenArray**
    - 2차원 배열을 1차원으로 변환
 
-**6. GetFilePath**
-   - 윈폼(winform) 창을 띄우고, 폴더를 선택하게 한 뒤 해당 파일 경로를 return함
+**6. GetExcelFilesList**
+    - 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환
 
-**7. GetFolderPath**
-   - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 return함
+**7. GetFilePath**
+   - 윈폼(winform) 창을 띄우고, 폴더를 선택하게 한 뒤 해당 파일 경로를 반환
 
-**8. GetSheetsNames**
+**8. GetFolderPath**
+   - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 반환
+
+**9. GetSheetsNames**
   - 워크북의 모든 워크시트들의 이름을 배열로 저장
 
-**9. GetUniqueValues**
-  - Range를 input으로 받아 Range 안에 고유값만을 배열로 return
+**10. GetUniqueValues**
+  - Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
 
-**10. IsInArray**
-   - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환함
+**11. IsInArray**
+   - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
 
 
 ## Sub processors
@@ -43,10 +47,13 @@ VBA code Snippets, patterns, useful functions
 **2. SaveWsAsPDF**
   - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 
-**3. SelectNextUniqueValue**
+**3. SaveWsAsCSV**
+  - 워크시트를 csv 파일로 저장함
+
+**4. SelectNextUniqueValue**
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
-**4. VBAOptimizer**
+**5. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
