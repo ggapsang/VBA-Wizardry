@@ -1,4 +1,4 @@
-' 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환하는 함수
+''' 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환하는 함수
 Function GetExcelFilesList(folderPath) As Variant
     Dim fileName As String
     Dim fileList As Object
