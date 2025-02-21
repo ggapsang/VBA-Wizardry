@@ -1,3 +1,4 @@
+''' 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤 (단축키 넣어서 사용)
 Sub SelectNextUniqueValue()
     Dim currentValue As Variant
     Dim currentCell As Range
