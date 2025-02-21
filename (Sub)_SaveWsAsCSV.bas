@@ -1,5 +1,5 @@
-Private Sub SaveWsSheetAsCSV(ws As Worksheet, Optional folderPath As String = "")
-    OptimizeStart    
+Private Sub SaveWsAsCSV(ws As Worksheet, Optional folderPath As String = "")
+    
     Dim fileName As String
     
     If folderPath = "" Then ' 폴더 경로가 지정되지 않은 경우, 사용자가 선택할 수 있도록 탐색기 창 열기
@@ -18,9 +18,7 @@ Private Sub SaveWsSheetAsCSV(ws As Worksheet, Optional folderPath As String = ""
     
     ' 워크시트를 CSV로 저장
     ws.Copy
-    ActiveWorkbook.SaveAs Filename:=fileName, FileFormat:=xlCSV, CreateBackup:=False
+    ActiveWorkbook.SaveAs fileName:=fileName, FileFormat:=xlCSV, CreateBackup:=False
     ActiveWorkbook.Close False
 
-    OptimizeEnd
-    
 End Sub
