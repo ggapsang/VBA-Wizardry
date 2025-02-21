@@ -21,17 +21,20 @@ VBA code Snippets, patterns, useful functions <br>
 **1. ExportWsToNewWb**
   - 워크시트를 복사해서 새 워크북에 넣음
 
-**2. SaveWsAsPDF**
+**2. InsertImageAtCell**
+  - 특정 셀안에 이미지를 넣음
+
+**3. SaveWsAsPDF**
   - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 
-**3. SaveWsAsCSV**
+**4. SaveWsAsCSV**
   - 워크시트를 csv 파일로 저장함
 
-**4. SelectNextUniqueValue**
+**5. SelectNextUniqueValue**
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
-**5. VBAOptimizer**
+**6. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
 ## Functions
