@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-12 functions, 5 sub processor, 2 module, 1 snippet (2025.2.22)
+12 functions, 5 sub processor, 3 module, 1 snippet (2025.2.22)
 
 - Spellbook : modules
 - Runes : sub processors
@@ -15,6 +15,9 @@ VBA code Snippets, patterns, useful functions <br>
 **2. SelectNextUniqueValue**
   - 현재 선택된 셀에서 열 기준으로 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬 후 단축키를 넣어 사용할때, 유용한 매크로
+
+**3. SwapRange**
+  - 열 기준으로 하여 두 셀의 값을 서로 바꿈
 
 ## Sub processors
 
