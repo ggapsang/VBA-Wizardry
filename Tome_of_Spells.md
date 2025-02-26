@@ -67,7 +67,7 @@ VBA code Snippets, patterns, useful functions <br>
    - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 반환
 
 **9. GetImageList**
-    - 워크시트를 받아서 해당 워크시트 안에 있는 이미지 파일들의 배열을 반환
+  - 워크시트를 받아서 해당 워크시트 안에 있는 이미지 파일들의 배열을 반환
 
 **10. GetSheetsNames**
   - 워크북의 모든 워크시트들의 이름을 배열로 저장
