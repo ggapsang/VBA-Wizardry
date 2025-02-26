@@ -34,7 +34,10 @@ VBA code Snippets, patterns, useful functions <br>
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
-**6. VBAOptimizer**
+**6. SendEmailWithAttachment**
+  - 아웃룩에 로그인 된 상태에서 원하는 메일 주소로 파일을 첨부하여 이메일을 전송함 
+
+**7. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
 ## Functions
