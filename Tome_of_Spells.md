@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-12 functions, 5 sub processor, 3 module, 1 snippet (2025.2.22)
+12 functions, 7 sub processor, 4 module, 1 snippet (2025.2.22)
 
 - Spellbook : modules
 - Runes : sub processors
