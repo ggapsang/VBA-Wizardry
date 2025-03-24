@@ -1,7 +1,5 @@
 Sub FillDown()
-'
-' 바로 가기 키: Ctrl+Shift+V
-'
+
     Dim rngStartCell As Range
     Dim rngEndCell As Range
     Dim rngNewStartCell As Range
