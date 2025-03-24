@@ -12,11 +12,15 @@ VBA code Snippets, patterns, useful functions <br>
   - 특정 폴더 안에 있는 모든 엑셀파일들의 특정 번호의 시트를 csv파일로 저장함
   - 시트 번호를 시트 이름 등으로 수정하여 동적으로 변경되도록 개조 가능
 
-**2. SelectNextUniqueValue**
+**2. FillDown**
+  - 아래로 빈 값 채우기
+  - 선택된 셀 부터 다음 채워진 값이 나오기 전까지 모든 비어 있는 셀 값을 선택된 셀의 값으로 채움
+
+**3. SelectNextUniqueValue**
   - 현재 선택된 셀에서 열 기준으로 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬 후 단축키를 넣어 사용할때, 유용한 매크로
 
-**3. SwapRange**
+**4. SwapRange**
   - 열 기준으로 하여 두 셀의 값을 서로 바꿈
 
 ## Sub processors
