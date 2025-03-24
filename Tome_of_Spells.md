@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-12 functions, 7 sub processor, 4 module, 1 snippet (2025.2.22)
+12 functions, 7 sub processor, 5 module, 1 snippet (2025.2.22)
 
 - Spellbook : modules
 - Runes : sub processors
@@ -16,11 +16,14 @@ VBA code Snippets, patterns, useful functions <br>
   - 아래로 빈 값 채우기
   - 선택된 셀 부터 다음 채워진 값이 나오기 전까지 모든 비어 있는 셀 값을 선택된 셀의 값으로 채움
 
-**3. SelectNextUniqueValue**
+**3. MatrixMixer**
+  - 두 개의 테이블(시트)의 값을 각 칼럼 이름에 맞게 합치되, 첫 번째 시트의 값을 1순위로, 두번째 시트의 값을 2순위로 하고, 첫 번째 시트의 특정 셀이 비었지만 두 번째 시트의 셀에 값이 있을때는 두 번째 셀의 값을 입력함
+
+**4. SelectNextUniqueValue**
   - 현재 선택된 셀에서 열 기준으로 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬 후 단축키를 넣어 사용할때, 유용한 매크로
 
-**4. SwapRange**
+**5. SwapRange**
   - 열 기준으로 하여 두 셀의 값을 서로 바꿈
 
 ## Sub processors
