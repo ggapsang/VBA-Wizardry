@@ -1,23 +1,19 @@
 Sub MatrixMixer()
 
-    Application.ScreenUpdating = False
-    Application.Calculation = xlCalculationManual
-    Application.EnableEvents = False
-    Application.DisplayStatusBar = False
-    ActiveSheet.DisplayPageBreaks = False
-
+    OptimizeStart
+    
     Dim wb As Workbook
     
-    Dim wsN1 As Worksheet
-    Dim wsN2 As Worksheet
-    Dim wsN3 As Worksheet
-    Dim wsN4 As Worksheet
-    Dim wsN5 As Worksheet
+    Dim wsN1 As Worksheet '값을 병합할 시트 1
+    Dim wsN2 As Worksheet '값을 병합할 시트 2
+    Dim wsN3 As Worksheet '값을 병합할 시트 3
+    Dim wsN4 As Worksheet '값을 병합할 시트 4
+    Dim wsN5 As Worksheet '값을 병합할 시트 5
     
-    Dim wsR1 As Worksheet
-    Dim wsR2 As Worksheet
-    Dim wsR3 As Worksheet
-    Dim wsR4 As Worksheet
+    Dim wsR1 As Worksheet '결과값 시트(1+2)
+    Dim wsR2 As Worksheet '결과값 시트(1+2+3)
+    Dim wsR3 As Worksheet '결과값 시트(1+2+3+4)
+    Dim wsR4 As Worksheet '결과값 시트(1+2+3+4+5)
     
     Set wb = ThisWorkbook()
     Set wsN1 = wb.Sheets("N1")
@@ -30,29 +26,23 @@ Sub MatrixMixer()
     Set wsR2 = wb.Sheets("N1+N2+N3")
     Set wsR3 = wb.Sheets("N1+N2+N3+N4")
     Set wsR4 = wb.Sheets("N1+N2+N3+N4+N5")
-    
 
-    Call MergeTableSetOrder(wsN1, wsN2, wsR1)
+    Call MergeTableSetOrder(wsN1, wsN2, wsR1) '병합 함수 MergeTableSetOrder
     Call MergeTableSetOrder(wsR1, wsN3, wsR2)
     Call MergeTableSetOrder(wsR2, wsN4, wsR3)
     Call MergeTableSetOrder(wsR3, wsN5, wsR4)
     
     
-    Application.ScreenUpdating = True
-    Application.Calculation = xlCalculationAutomatic
-    Application.EnableEvents = True
-    Application.DisplayStatusBar = True
-    ActiveSheet.DisplayPageBreaks = True
+    OptimizeEnd
     
 End Sub
 
-
-
-
-
 Private Sub MergeTableSetOrder(ws_1 As Worksheet, ws_2 As Worksheet, ws_result As Worksheet)
+''' 병합 기준
+''' 1. key(첫 번째 열의 값)-value_name(두번째 부터 열의 이름)-value(각 열에 들어가는 값)를 쌍으로 하는 딕셔너리 조합을 각각의 시트별로 만들어 비교함
+''' 2. ws_1 시트와 ws_2 시트에 동일한 값이 있을 경우 ws_1의 값을 우선으로 결과에 반영함
+''' 3. ws_1에는 비어 있는 값이나 ws_2에 값이 있을 경우 ws_2의 값을 결과에 넣음
 
-    
     '첫 번째 시트에 기본 변수 선언 : 마지막 행, 마지막 열, 키, 칼럼, 값을 배열로 저장
     
     Dim lastRowWs_1 As Long '마지막 행
@@ -91,7 +81,6 @@ Private Sub MergeTableSetOrder(ws_1 As Worksheet, ws_2 As Worksheet, ws_result A
     keyArray_2() = ws_2.Range("A2:A" & lastRowWs_2).Value
     colArray_2() = ws_2.Range("B1:" & strLastColsWs_2 & 1).Value
     valueArray_2() = ws_2.Range("B2:" & strLastColsWs_2 & lastRowWs_2).Value
-    
     
     Dim i_1 As Long
     Dim j_1 As Long
@@ -165,6 +154,20 @@ Private Sub MergeTableSetOrder(ws_1 As Worksheet, ws_2 As Worksheet, ws_result A
     Set dictKeyMap = Nothing
     Set dictColMap = Nothing
     
+End Sub
+
+Private Sub OptimizeStart()
+    Application.ScreenUpdating = False
+    Application.Calculation = xlCalculationManual
+    Application.EnableEvents = False
+    Application.DisplayAlerts = False
+End Sub
+
+Private Sub OptimizeEnd()
+    Application.ScreenUpdating = True
+    Application.Calculation = xlCalculationAutomatic
+    Application.EnableEvents = True
+    Application.DisplayAlerts = True
 End Sub
 
 Function ConvertToLetter(iCol As Long) As String
