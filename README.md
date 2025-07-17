@@ -87,12 +87,16 @@ VBA code Snippets, patterns, useful functions <br>
 **10. GetSheetsNames**
   - 워크북의 모든 워크시트들의 이름을 배열로 저장
 
-**11. GetUniqueValues**
+**11. GetExcelFilesListRecursive**
+  - 특정 폴더 안에 있는 모든 엑셀 파일(하위 폴더안에 있는 파일 포함)들을 가져옴
+  - 임시파일($)은 가져오지 않음
+
+**12. GetUniqueValues**
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
 
-**12. IsInArray**
+**13. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
-
+   - 
 ## Snippets
 
 **1. ReadFilesByLines**
