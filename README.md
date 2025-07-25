@@ -4,7 +4,7 @@ VBA code Snippets, patterns, useful functions <br>
 
 - Spellbook : modules
 - Runes : sub processors
-- Incantations : functions
+- functions
 - Cantrips : sinppets
 
 ## Read 
