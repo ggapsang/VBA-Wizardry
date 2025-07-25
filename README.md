@@ -32,27 +32,29 @@ VBA code Snippets, patterns, useful functions <br>
   - 열 기준으로 하여 두 셀의 값을 서로 바꿈
 
 ## Sub processors
-
-**1. ExportWsToNewWb**
+**1. CreatePt**
+  - 피벗 캐시로 피벗 테이블 생성
+    
+**2. ExportWsToNewWb**
   - 워크시트를 복사해서 새 워크북에 넣음
 
-**2. InsertImageAtCell**
+**3. InsertImageAtCell**
   - 특정 셀안에 이미지를 넣음
 
-**3. SaveWsAsPDF**
+**4. SaveWsAsPDF**
   - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 
-**4. SaveWsAsCSV**
+**5. SaveWsAsCSV**
   - 워크시트를 csv 파일로 저장함
 
-**5. SelectNextUniqueValue**
+**6. SelectNextUniqueValue**
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
-**6. SendEmailWithAttachment**
+**7. SendEmailWithAttachment**
   - 아웃룩에 로그인 된 상태에서 원하는 메일 주소로 파일을 첨부하여 이메일을 전송함 
 
-**7. VBAOptimizer**
+**8. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
 ## Functions
