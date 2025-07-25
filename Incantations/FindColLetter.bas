@@ -12,7 +12,17 @@ Function FindColLetter(hdr_row As Integer, search_value As Variant, Optional ws 
 
     Set search_rng = ws.Rows(hdr_row)
 
-    Set found_cell = search_rng.Find(What:=search_value, LookIn:=xlValues, LookAt:=xlWhole)
+    'Set found_cell = search_rng.Find(What:=search_value, LookIn:=xlValues, LookAt:=xlWhole)
+
+    Set found_cell = search_rng.Find( _
+        What:=search_value, _
+        LookIn:=xlValues, _
+        LookAt:=xlWhole, _
+        SearchOrder:=xlByColumns, _
+        SearchDirection:=xlNext, _
+        MatchCase:=False, _
+        SearchFormat:=False)
+
 
     If Not found_cell Is Nothing Then
         col_letter = Replace(found_cell.Cells.Address(False, False), hdr_row & "", "")
