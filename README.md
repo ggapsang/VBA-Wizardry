@@ -2,10 +2,10 @@
 VBA code Snippets, patterns, useful functions <br>
 5 module, 7 sub processor, 12 functions, 1 snippet (2025.3.24)
 
-- Spellbook : modules
-- Runes : sub processors
+- modules
+- sub processors
 - functions
-- Cantrips : sinppets
+- sinppets
 
 ## Read 
 **Arcane_Compendium.md :** Summary of methods and usage of frequently used VBA Objects<br>
