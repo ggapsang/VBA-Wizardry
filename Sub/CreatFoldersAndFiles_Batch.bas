@@ -2,16 +2,19 @@ Option Explicit
 
 Sub CreateFolderAndFiles()
 
-    Dim ws as Worksheet
-    Dim lastRow as Long
-    Dim i as Long
-    Dim folderPath as String
-    Dim folderLevel_1 as String
-    Dim folderLevel_2 as String
-    Dim folderLevel_3 as String
-    Dim fileName as String
-    Dim newWb as Workbook
-
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim i As Long
+    Dim baseFolderPath As String
+    Dim folderPath As String
+    Dim folderLevel_1 As String
+    Dim folderLevel_2 As String
+    Dim folderLevel_3 As String
+    Dim fileName As String
+    Dim newWb As Workbook
+    Dim fso As Object
+    
+    Set fso = CreateObject("Scripting.FileSystemObject")
     Set ws = ThisWorkbook.Sheets("Sheet1")
     lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
 
@@ -23,14 +26,26 @@ Sub CreateFolderAndFiles()
 
         folderPath = ThisWorkbook.Path & "\" & folderLevel_1 & "\" & folderLevel_2 & "\" & folderLevel_3 'ThisWorkbook.Path 또한 변경 가능
 
-        On Error Reusme Next
-        MkDir folderPath
-        On Error Goto 0
-        Err.Clear
+        baseFolderPath = ThisWorkbook.Path
+        
+        folderPath = baseFolderPath & "\" & folderLevel_1
+        If Not fso.FolderExists(folderPath) Then
+            fso.CreateFolder folderPath
+        End If
+        
+        folderPath = folderPath & "\" & folderLevel_2
+        If Not fso.FolderExists(folderPath) Then
+            fso.CreateFolder folderPath
+        End If
+        
+        folderPath = folderPath & "\" & folderLevel_3
+        If Not fso.FolderExists(folderPath) Then
+            fso.CreateFolder folderPath
+        End If
 
         If fileName <> "" Then
             ''' 텍스트 파일인 경우
-            Open folderPath & "\" fileName For Output As #1 '파일 식별을 위한 고유 번호 1 ~ 511
+            'Open folderPath & "\" fileName For Output As #1 '파일 식별을 위한 고유 번호 1 ~ 511
                 ' Input: 파일을 읽기 전용으로 엽니다.
                 ' Output: 파일을 쓰기 전용으로 엽니다. 파일이 이미 존재하면 내용이 지워지고, 없으면 새로 생성됩니다.
                 ' Append: 파일을 추가 모드로 엽니다. 파일이 이미 존재하면 내용의 끝에 데이터가 추가되고, 없으면 새로 생성됩니다.
@@ -39,9 +54,11 @@ Sub CreateFolderAndFiles()
                 ' Print #1
                 ' Close #1
             ''' 엑셀 파일인 경우
-            Set newWb = Workbooks.Add.SaveAs Filename:= folderPath &" \ "& fileName
+            Set newWb = Workbooks.Add
+            newWb.SaveAs fileName:=folderPath & "\" & fileName
+            newWb.Close SaveChanges:=False
         End If
         
     Next i
     
-End SUb
+End Sub
