@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-5 module, 7 sub processor, 12 functions, 1 snippet (2025.3.24)
+5 module, 9 sub processor, 13 functions, 1 snippet (2025.3.24)
 
 - modules
 - sub processors
@@ -32,29 +32,33 @@ VBA code Snippets, patterns, useful functions <br>
   - 열 기준으로 하여 두 셀의 값을 서로 바꿈
 
 ## Sub processors
-**1. CreatePt**
+
+**1. CreatFoldersAndFiles_Batch.bas**
+  - 대량으로 폴더 및 파일 생성
+
+**2. CreatePt**
   - 피벗 캐시로 피벗 테이블 생성
     
-**2. ExportWsToNewWb**
+**3. ExportWsToNewWb**
   - 워크시트를 복사해서 새 워크북에 넣음
 
-**3. InsertImageAtCell**
+**4. InsertImageAtCell**
   - 특정 셀안에 이미지를 넣음
 
-**4. SaveWsAsPDF**
+**6. SaveWsAsPDF**
   - 워크시트를 pdf 파일로 저장함(한 페이지 안에 모든 값이 다 들어가도록 인쇄)
 
-**5. SaveWsAsCSV**
+**6. SaveWsAsCSV**
   - 워크시트를 csv 파일로 저장함
 
-**6. SelectNextUniqueValue**
+**7. SelectNextUniqueValue**
   - 현재 선택된 셀에서 아래로 내려가면서, 현재 선택된 셀과 값이 다른 셀에서 멈춤
   - 정렬된 데이터에서 중복된 값 다음으로 이동할 때 유용
 
-**7. SendEmailWithAttachment**
+**8. SendEmailWithAttachment**
   - 아웃룩에 로그인 된 상태에서 원하는 메일 주소로 파일을 첨부하여 이메일을 전송함 
 
-**8. VBAOptimizer**
+**9. VBAOptimizer**
    - 프로시저 시작/끝에서 screenupdating 기능 등 vba 속도 구현을 위한 옵션 설정
   
 ## Functions
