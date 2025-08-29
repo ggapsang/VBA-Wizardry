@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-5 module, 9 sub processor, 13 functions, 1 snippet (2025.3.24)
+5 module, 9 sub processor, 14 functions, 1 snippet (2025.3.24)
 
 - modules
 - sub processors
@@ -72,37 +72,40 @@ VBA code Snippets, patterns, useful functions <br>
 **3. CreateDictionaryFromRange**
   - (N x M) Range에서 첫 번째 열을 key로, 나머지 (M-1)개 열의 값을 배열로 저장하는 딕셔너리 생성
 
-**4. FindColLetter**
+**4. ExportWsToNewWb**
+   - 워크시트를 복사해서 새 워크북에 넣음
+
+**5. FindColLetter**
    - 특정 행(해더)에서 특정 문자열(칼럼 이름)을 찾고, 해당 칼럼이 있는 열 위치를 알파벳으로 반환하기
 
-**5. FlattenArray**
+**6. FlattenArray**
    - 2차원 배열을 1차원으로 변환
 
-**6. GetExcelFilesList**
+**7. GetExcelFilesList**
   - 선택한 폴더 내의 모든 엑셀 파일 목록을 배열로 반환
 
-**7. GetFilePath**
+**8. GetFilePath**
    - 윈폼(winform) 창을 띄우고, 폴더를 선택하게 한 뒤 해당 파일 경로를 반환
 
-**8. GetFolderPath**
+**9. GetFolderPath**
    - 윈폼(winform) 창을 띄우고, 파일을 선택하게 한 뒤 해당 파일 경로를 반환
 
-**9. GetImageList**
+**10. GetImageList**
   - 워크시트를 받아서 해당 워크시트 안에 있는 이미지 파일들의 배열을 반환
 
-**10. GetSheetsNames**
+**11. GetSheetsNames**
   - 워크북의 모든 워크시트들의 이름을 배열로 저장
 
-**11. GetExcelFilesListRecursive**
+**12. GetExcelFilesListRecursive**
   - 특정 폴더 안에 있는 모든 엑셀 파일(하위 폴더안에 있는 파일 포함)들을 가져옴
   - 임시파일($)은 가져오지 않음
 
-**12. GetUniqueValues**
+**13. GetUniqueValues**
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
 
-**13. IsInArray**
+**14. IsInArray**
    - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
-   - 
+    
 ## Snippets
 
 **1. ReadFilesByLines**
