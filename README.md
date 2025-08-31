@@ -1,6 +1,6 @@
 # VBA-Wizardry
 VBA code Snippets, patterns, useful functions <br>
-5 module, 9 sub processor, 14 functions, 1 snippet (2025.3.24)
+5 module, 9 sub processor, 15 functions, 2 snippet (2025.8.31)
 
 - modules
 - sub processors
@@ -104,10 +104,16 @@ VBA code Snippets, patterns, useful functions <br>
   - Range를 input으로 받아 Range 안에 고유값만을 배열로 반환
 
 **14. IsInArray**
-   - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
+  - 배열 안에 특정 문자열이 있으면 True, 그렇지 않으면 False를 반환
+
+**15. RangeTo1DArray**
+  - Range를 1차원 배열로 변환 
     
 ## Snippets
 
-**1. ReadFilesByLines**
+**1. BasicMainFormat**
+    - 전형적인 VBA 매크로 패턴 (특정 파일 가져오기 -> 템플릿 시트 복사하여 새 워크북 만들기 -> 새 워크북에서 작업 시작) 
+
+**2. ReadFilesByLines**
     - VBA로 텍스트 파일을 읽는 법
     - 파이썬처럼 line by line으로 읽어들이기
