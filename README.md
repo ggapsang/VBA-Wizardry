@@ -112,8 +112,8 @@ VBA code Snippets, patterns, useful functions <br>
 ## Snippets
 
 **1. BasicMainFormat**
-    - 전형적인 VBA 매크로 패턴 (특정 파일 가져오기 -> 템플릿 시트 복사하여 새 워크북 만들기 -> 새 워크북에서 작업 시작) 
+  - 전형적인 VBA 매크로 패턴 (특정 파일 가져오기 -> 템플릿 시트 복사하여 새 워크북 만들기 -> 새 워크북에서 작업 시작) 
 
 **2. ReadFilesByLines**
-    - VBA로 텍스트 파일을 읽는 법
-    - 파이썬처럼 line by line으로 읽어들이기
+  - VBA로 텍스트 파일을 읽는 법
+  - 파이썬처럼 line by line으로 읽어들이기
