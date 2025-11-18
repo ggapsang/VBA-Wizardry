@@ -12,6 +12,13 @@ VBA code Snippets, patterns, useful functions <br>
 
 
 ## Moduels
+
+**1. AppendTextToEnd**
+  - 선택된 셀의 값에 뒤에다 일괄적으로 텍스트를 붙임
+
+**2. AppendTextToFront**
+  - 선택된 셀의 값 앞에다 일괄적으로 텍스트를 붙임
+
 **1. BatchSaveWsAsCSV**
   - 특정 폴더 안에 있는 모든 엑셀파일들의 특정 번호의 시트를 csv파일로 저장함
   - 시트 번호를 시트 이름 등으로 수정하여 동적으로 변경되도록 개조 가능
@@ -111,9 +118,15 @@ VBA code Snippets, patterns, useful functions <br>
     
 ## Snippets
 
-**1. BasicMainFormat**
+**1. AdvancedFilterPattern**
+  - 고급 필터의 응용 버전
+    - UI 및 View 용 시트
+    - 해당 UI에 사용자가 입력한 값들을 조합하여 별도 시트에 고급필터 조건 Range 생성
+    - Source 시트 + 고급필터 조건 시트 -> 값을 가져와 View 시트에 보여줌
+
+**2. BasicMainFormat**
   - 전형적인 VBA 매크로 패턴 (특정 파일 가져오기 -> 템플릿 시트 복사하여 새 워크북 만들기 -> 새 워크북에서 작업 시작) 
 
-**2. ReadFilesByLines**
+**3. ReadFilesByLines**
   - VBA로 텍스트 파일을 읽는 법
   - 파이썬처럼 line by line으로 읽어들이기
